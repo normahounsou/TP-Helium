@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #1d1d1d;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 25px;
+}
+
+nav h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+nav li {
+  list-style: none;
+  color: white;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 50px 25px;
+}
+
+.header-left-container {
+  margin: 50px 0;
+}
+
+.header-left-container h1 {
+  font-size: 5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.header-left-container h3 {
+  font-size: 1.8rem;
+  color: #3a3de6;
+}
+
+.header-left-container p {
+  font-size: 0.6rem;
+  color: white;
+  margin-top: 10px;
+}
+
+.header-right img {
+  width: 90%;
+  margin: 20px auto;
+  display: block;
+}
+
+.infos {
+  background: #0d0d0d;
+  padding: 25px 25px 5px 25px;
+  margin: 0 5px 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.infos-left h3 {
+  color: white;  
+  font-size: 1rem;
+}
+
+.infos-left .btn-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infos-left .btn-container button {
+  border: none;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  width: 90%;
+  font-size: 0.7rem;
+  background: #474cfe;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.infos-right {
+  width: 60%;
+}
+
+.infos-right h3 {
+  color: white;
+  font-size: 1rem;
+}
+
+.infos-right .investors {
+  margin-top: 20px;
+}
+
+.infos-right .investors .img-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-container img {
+  margin: 20px;
+  width: 15%;
+}
+
+/* ===============media querys==================== */
+@media screen and (max-width: 932px) {
+  .header-right img {
+   padding-top: 20px;
+   width: 100%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .header-left-container h1 {
+    font-size: 2.7rem;
+  }
+  .header-left-container h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  .header-left-container p {
+    font-size: 0.7rem;
+    text-align: justify;
+  }
+  .header-right img {
+    width: 85%;
+    margin-top: 5px;
+  }
+  .img-container img {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .header-left-container h1 {
+    font-size: 2.3rem;
+  }
+  .header-left-container h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  .header-left-container p {
+    font-size: 0.7rem;
+    text-align: justify;
+  }
+  .header-right img {
+    width: 85%;
+    margin-top: 5px;
+  }
+  .img-container img {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .header-left-container h1 {
+    font-size: 2.3rem;
+  }
+  .header-left-container h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  .header-left-container p {
+    font-size: 0.7rem;
+    text-align: justify;
+  }
+  .header-right img {
+    width: 75%;
+    margin-top: 5px;
+  }
+  .img-container img {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav ul {
+    width: 60%;
+  }
+  nav li {
+    font-size: 0.7rem;
+  }
+  header {
+    display: block;
+  }
+  .header-left-container h1 {
+    font-size: 2.3rem;
+  }
+  .header-left-container h3 {
+    font-size: 0.9rem;
+  }
+  .header-left-container p {
+    font-size: 0.6rem;
+  }
+  .header-left-container {
+    margin-bottom: 10px;
+  }
+  .header-right img {
+    width: 60%;
+  }
+  .infos {
+    display: block;
+  }
+  .infos-left h3 {
+    text-align: center;
+  }
+  .infos-left .btn-container button {
+    width: 40%;
+    padding: 10px 5px;
+  }
+  .infos-right {
+    width: 100%;
+  }
+  .infos-right h3 {
+    text-align: center;
+  }
+  .infos-right .investors .img-container {
+    display: block;
+  }
+  .img-container img {
+    margin: 0 20px;
+  }
+}
